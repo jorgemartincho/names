@@ -4,11 +4,10 @@ $(document).ready(function() {
       var showStuff = $(this).prop("checked");
       $(this).closest(".autohide").each(function() {
         if (showStuff) {
-          $(this).addClass("checkhidden");
-          alert($(this).find('input').attr('id'));
-          localStorage.setItem($(this).find('input').attr('id'), "checkhidden");
-        } else {
           $(this).removeClass("checkhidden");
+        } else {
+          $(this).addClass("checkhidden");
+          localStorage.setItem($(this).find('input').attr('id'), "checkhidden");
         }
       });
     });
