@@ -5,7 +5,7 @@ $(document).ready(function() {
       $(this).closest(".autohide").each(function() {
         if (showStuff) {
           $(this).addClass("checkhidden");
-          localStorage.setItem($(this).find('ínput').attr('id'), "checkhidden");
+          localStorage.setItem($(this).find('input').attr('id'), "checkhidden");
         } else {
           $(this).removeClass("checkhidden");
         }
